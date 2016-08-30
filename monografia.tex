@@ -1,0 +1,69 @@
+% vim: tw=80 noai
+\documentclass[normaltoc,capchap,capsec,times]{abnt}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage[alf]{abntcite}
+\usepackage[ordem=alf]{tabela-simbolos}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{verbatim}
+\usepackage{subfigure}
+\usepackage{multicol}
+\usepackage{framed}
+% O comando abaixo define o diretorio onde devem ser colocadas as imagens.
+% Neste caso o diretorio é ./imagens/
+\graphicspath{ {./imagens/} }
+\def\lstlistingname{Listagem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dados da monografia
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\meunome}{José Lucas dos Santos Borges}
+\newcommand{\meutitulo}{Construindo um mecanismo para predição de momentos oportunos para interrupção de motoristas utilizando contexto}
+\newcommand{\meusubtitulo}{}
+\newcommand{\meuano}{2016}
+\newcommand{\meuorientador}{Orientador: \profa\ Vaninha Vieira dos Santos}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% O comando \obs aqui definido permite que o autor faca anotacoes na
+%% monografia que aparecem no PDF gerado. Para ativar o comando, descomente
+%% a primeira linha e comente a segunda.
+%% Exemplo de uso: \obs{Preciso melhorar este parágrafo...}
+
+%\newcommand{\obs}[1]{\underline{\textbf{OBSERVAÇÃO}}: \emph{#1}}
+\newcommand{\obs}[1]{}
+
+\def\ordfem{\mbox{\raise .35em \hbox{\underline{\scriptsize a}\ }}}
+\def\ordmasc{\mbox{\raise .35em \hbox{\underline{\scriptsize o}\ }}}
+\def\profa{Prof\ordfem.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\input{capa.tex}
+\input{folhaderosto.tex}
+
+%% As listas a seguir sao opcionais:
+%\listadetabelas
+\listadesiglas
+%\listadesimbolos
+
+\sumario
+
+% O conteudo da monografia esta' nos seguintes arquivos:
+\input{objetivo.geral.tex}
+\input{objetivos.especificos.tex}
+\input{justificativa.tex}
+\input{revisao.literatura.tex}
+\input{metodologia.tex}
+\input{resultados.tex}
+\input{cronograma.tex}
+
+\bibliography{monografia}
+
+\end{document}
