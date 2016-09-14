@@ -1,0 +1,6 @@
+Contexto
+
+aplicações estáticas antigamente
+utilizar contexto pode suprir necessidades do usuário instantaneamente(?)
+aplicações adaptativas
+com a popularização de dispositivos utilizar contexto é interessante e mais viável
