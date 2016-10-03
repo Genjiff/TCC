@@ -22,20 +22,46 @@ Diversos sensores podem ser utilizados para determinar informações sobre o con
 sensores de localização (GPS), sensores de luz e som, acelerômetro e giroscópio.
 
 Informações de contexto são importantes para definir o estado atual do usuário e do ambiente onde ele está inserido,
-mas somente isto é insuficiente. Para utilizar estas informações satisfatoriamente, é ideal que se construa um sistema
+mas somente isto é insuficiente. Para utilizar estas informações satisfatoriamente é ideal que se construa um sistema
 adaptativo e que supra as necessidades do usuário em tempo real utilizando as informações de contexto. Resumindo,
 um sistema sensível ao contexto.
 
 Sistemas sensíveis ao contexto são capazes de adaptar suas operações ao contexto atual, sem intervenção
 explícita do usuário e têm como objetivo aumentar sua usabilidade e efetividade levando em conta elementos
-de contexto \cite{baldauf2007survey}. Já \cite{abowd1999towards} define que um sistema é sensível ao contexto
+de contexto \cite{baldauf2007survey}. \cite{abowd1999towards} afirma que um sistema é sensível ao contexto
 se ele utiliza contexto para prover informações relevantes e/ou serviços para usuários, sendo que a relevância
 depende das tarefas do usuário.
 
 \section{Interrupção}
 \label{interrupcao}
 
+Segundo \cite{ferreira2004novo}, interrupção é aquilo que faz parar uma ação ou um estado; o ato de cortar a continuidade de
+algo. A interrupção durante a execução de uma tarefa pode ter vários efeitos adversos. \cite{lewin1927untersuchungen} diz
+que pessoas lembram melhor dos detalhes de tarefas que não foram interrompidas. \cite{zijlstra1999temporal} conclui que
+pessoas cometem mais erros em tarefas após uma interrupção. \cite{gillie1989makes} afirma que as pessoas executam tarefas
+mais vagarosamente após uma interrupção, se comparado com a performance pré-interrupção.
 
+A literatura indica que interrupções durante uma tarefa são bastante nocivas para a execução da mesma.
+
+\subsection{Interrupção de Motoristas}
+\label{interrupcao-motoristas}
+
+(...)
+
+Vários problemas na execução de uma tarefa após uma interrupção, como os citados na seção \ref{interrupcao} afetam o
+motorista durante a direção de um veículo:
+
+\begin{itemize}
+  \item Ao não lembrar de detalhes do que estava fazendo antes da interrupção, o motorista pode esquecer de informações
+  apontadas pela sinalização de trânsito;
+  \item Ao cometer erros após uma interrupção, o motorista põe em risco a si mesmo e aos seus pares, podendo causar acidentes
+  de trânsito;
+  \item Ao reagir mais vagarosamente após uma interrupção o motorista fica vulnerável a ameaças externas que exijam de sua
+  capacidade reativa;
+\end{itemize}
+
+%A tabela 3.5 relaciona potenciais problemas que podem ser desencadeados pelas interrupções, citados na seção
+%\ref{interrupcao}, com o contexto de motoristas.
 
 \subsection{Notificações e seu caráter interruptivo}
 \label{notificacao}
@@ -55,5 +81,4 @@ usuário \cite{sahami2014large}.
 \label{notification-drawer}
 \end{figure}
 
-\subsection{Interupção de Motoristas}
-\label{interrupcao-motoristas}
+Apesar da
