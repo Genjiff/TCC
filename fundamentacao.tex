@@ -15,11 +15,11 @@ Um elemento bastante importante para a Computação Ubíqua é o estudo do conte
 Contexto é definido por \cite{dey2001understanding} como "Qualquer informação que pode ser utilizada para
 caracterizar a situação de entidades (ex: um usuário, lugar ou objeto) e que é considerada relevante para
 a interação entre um usuário e uma aplicação, incluindo o próprio usuário e aplicação". Esta definição é
-a mais utilizada na área e provavelmente a mais aceita. Alguns exemplos de elementos de contexto são
-localização do usuário, ambiente, identidade do usuário e tempo \cite{ryan1999enhanced}.
+a mais utilizada na área. Alguns exemplos de elementos de contexto são
+localização do usuário, identidade do usuário e tempo \cite{ryan1999enhanced}.
 
 Diversos sensores podem ser utilizados para determinar informações sobre o contexto do usuário. Alguns exemplos são
-sensores de localização (GPS), sensores de luz e som, acelerômetro e giroscópio.
+sensores de localização (GPS), sensores de luz, acelerômetro e giroscópio.
 
 Informações de contexto são importantes para definir o estado atual do usuário e do ambiente onde ele está inserido,
 mas somente isto é insuficiente. Para utilizar estas informações satisfatoriamente é ideal que se construa um sistema
@@ -28,9 +28,9 @@ um sistema sensível ao contexto.
 
 Sistemas sensíveis ao contexto são capazes de adaptar suas operações ao contexto atual, sem intervenção
 explícita do usuário e têm como objetivo aumentar sua usabilidade e efetividade levando em conta elementos
-de contexto \cite{baldauf2007survey}. \cite{abowd1999towards} afirma que um sistema é sensível ao contexto
-se ele utiliza contexto para prover informações relevantes e/ou serviços para usuários, sendo que a relevância
-depende das tarefas do usuário.
+de contexto \cite{baldauf2007survey}.  Um sistema é sensível ao contexto se ele utiliza contexto para prover
+informações relevantes e/ou serviços para usuários, sendo que a relevância depende das tarefas do usuário
+\cite{abowd1999towards}.
 
 \section{Interrupção}
 \label{interrupcao}
@@ -74,6 +74,17 @@ novo comentário em suas redes sociais. Em alguns casos o usuário toma ações 
 enquanto em outros ela é simplesmente ignorada. Essas ações dependem da importância da notificação e do contexto do
 usuário \cite{sahami2014large}.
 
+Em dispositivos móveis uma notificação é uma mensagem que pode ser exibida ao usuário fora da interface normal de um aplicativo.
+Quando o aplicativo emite uma notificação, ela primeiro aparece como um ícone na área de notificação. Para ver os detalhes da
+notificação, o usuário abre a gaveta de notificação \cite{notificationDrawer}. A figura \ref{notification-drawer} mostra
+o layout da gaveta de notificações no Android. Cada retângulo branco preenchido com ícones e texto representa uma notificação
+diferente. O horário de chegada aparece no canto direito de cada notificação.
+
+Notificações semelhantes geralmente são agrupadas para que não sejam exibidas inúmeras notificações com conteúdo parecido.
+Pode-se perceber na figura \ref{notification-drawer} que a maioria das notificações possui um indicativo de informações agrupadas
+ao invés de múltiplas notificações. Ex: O texto "3 new messages" que aponta que existem 3 novas mensagens, ao invés de 3
+notificações apontando 1 nova mensagem cada.
+
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.3\textwidth]{notification_drawer}
@@ -81,4 +92,8 @@ usuário \cite{sahami2014large}.
 \label{notification-drawer}
 \end{figure}
 
-Apesar da
+A área de notificação e a gaveta de notificação mostradas na figura \ref{notification-drawer} são áreas controladas pelo
+sistema operacional e que o usuário pode visualizar a qualquer momento.
+
+A maioria das notificações possui pelo menos uma ação atrelada a si. Uma ação permite que os usuários direcionem-se
+diretamente da notificação para uma tela específica do aplicativo, onde podem visualizar um ou mais eventos ou realizar outros trabalhos.
