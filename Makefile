@@ -1,6 +1,6 @@
 # aptitude install abntex texlive-latex-extra
 
-SOURCEDOCUMENT=monografia
+SOURCEDOCUMENT=anteprojeto
 PDFVIEWER=evince
 CAPITULOS=$(wildcard *.tex)
 
