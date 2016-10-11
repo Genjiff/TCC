@@ -1,7 +1,7 @@
 \chapter{Proposta}
 \label{proposta}
-Este capítulo aborda alguns aspectos da proposta para a pesquisa do projeto final. As seguintes seções são
-apresentadas: Objetivo, Metodologia e Cronograma.
+Este capítulo aborda alguns aspectos da proposta do projeto final. As seguintes seções são apresentadas:
+Objetivo, Metodologia, Resultados Esperados e Cronograma.
 
 \section{Objetivo}
 \label{objetivo}
@@ -21,34 +21,45 @@ motoristas, utilizando elementos de contexto.
 \section{Metodologia}
 \label{metodologia}
 \begin{itemize}
-  \item Uma revisão da literatura será realizada;
-  \item Serão identificados momentos oportunos para interrupção de motoristas;
-  \item Será feita a concepção e definição do escopo do aplicativo;
-  \item A solução será projetada;
-  \item A solução será implementada em um aplicativo;
+  \item Serão identificados momentos oportunos para interrupção de motoristas a partir da leitura de artigos
+    relacionados;
+  \item Será feita a concepção e definição do escopo do artefato a ser desenvolvido, de forma que atenda a
+    todos os objetivos específicos;
+  \item A solução será projetada na forma de uma biblioteca que prediz momentos oportunos para a interrupção
+    de motoristas;
+  \item A biblioteca será desenvolvida para dispositivos do sistema operacional Android;
+  \item A biblioteca será incluída no aplicativo Meu Possante \cite{meupossante} e serão feitos testes que analisem se ela funciona
+    corretamente;
   \item A solução será testada e avaliada;
 \end{itemize}
 
+\section{Resultados Esperados}
+\label{resultados}
+
+Ao final deste trabalho espera-se ter um mecanismo que faça a predição automática de momentos oportunos para
+interrupção de motoristas, implementado na forma de uma biblioteca que poderá ser utilizada por qualquer aplicativo
+do sistema operacional Android.
+
 \section{Cronograma}
 \label{cronograma}
+
 \begin{table}[h]
 \centering
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{|r|c|c|c|c|}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{|r|c|c|c|c|c|c|c|c|c|}
 \hline
-\multicolumn{1}{|c|}{\multirow{2}{*}{Atividade}}                                                       & \multicolumn{2}{c|}{Setembro}                                       & \multicolumn{2}{c|}{Outubro}                                        \\ \cline{2-5}
-\multicolumn{1}{|c|}{}                                                                                 & \multicolumn{1}{l|}{1ª quinzena} & \multicolumn{1}{l|}{2ª quinzena} & \multicolumn{1}{l|}{1ª quinzena} & \multicolumn{1}{l|}{2ª quinzena} \\ \hline
-Pesquisa de trabalhos relacionados                                                                     & X                                & X                                & X                                &                                  \\ \hline
-Revisão da literatura                                                                                  & X                                & X                                & X                                &                                  \\ \hline
-\begin{tabular}[c]{@{}r@{}}Revisão da literatura -\\ Conceitos básicos de contexto\end{tabular}        & X                                &                                  &                                  &                                  \\ \hline
-Revisão da literatura - Interrupção                                                                    & X                                &                                  &                                  &                                  \\ \hline
-Revisão da literatura - Notificação                                                                    &                                  & X                                &                                  &                                  \\ \hline
-\begin{tabular}[c]{@{}r@{}}Revisão da literatura - \\ Interrupção de motoristas\end{tabular}           &                                  & X                                &                                  &                                  \\ \hline
-\begin{tabular}[c]{@{}r@{}}Revisão da literatura - \\ Sensores relevantes para a proposta\end{tabular} &                                  & X                                &                                  &                                  \\ \hline
-Definição do escopo do projeto                                                                         &                                  &                                  & X                                &                                  \\ \hline
-Entrega do anteprojeto                                                                                 &                                  &                                  & X                                &                                  \\ \hline
-Defesa do PF I                                                                                         &                                  &                                  &                                  & X                                \\ \hline
-\end{tabular}%
+\multicolumn{1}{|c|}{\multirow{2}{*}{Atividade}}                                                        & \multicolumn{2}{c|}{Dezembro} & \multicolumn{2}{c|}{Janeiro} & \multicolumn{2}{c|}{Fevereiro} & \multicolumn{2}{c|}{Março} & Abril     \\ \cline{2-10}
+\multicolumn{1}{|c|}{}                                                                                  & 1ª quinz.     & 2ª quinz.     & 1ª quinz.     & 2ª quinz.    & 1ª quinz.      & 2ª quinz.     & 1ª quinz.    & 2ª quinz.   & 1ª quinz. \\ \hline
+\begin{tabular}[c]{@{}r@{}}Pesquisa de momentos oportunos\\ para interrupção de motoristas\end{tabular} & X             & X             &               &              &                &               &              &             &           \\ \hline
+\begin{tabular}[c]{@{}r@{}}Elaboração da arquitetura\\ da biblioteca\end{tabular}                       &               & X             & X             &              &                &               &              &             &           \\ \hline
+\begin{tabular}[c]{@{}r@{}}Testes com sensores\\ que serão utilizados\end{tabular}                      &               &               & X             &              &                &               &              &             &           \\ \hline
+Desenvolvimento da biblioteca                                                                           &               &               & X             & X            & X              & X             &              &             &           \\ \hline
+\begin{tabular}[c]{@{}r@{}}Implementação no aplicativo\\ Meu Possante\end{tabular}                      &               &               &               &              &                & X             &              &             &           \\ \hline
+Testes no aplicativo                                                                                    &               &               &               &              &                & X             &              &             &           \\ \hline
+Avaliação da solução                                                                                    &               &               &               &              &                &               & X            &             &           \\ \hline
+Escrita da monografia                                                                                   &               & X             & X             & X            & X              & X             & X            & X           &           \\ \hline
+Entrega do projeto                                                                                      &               &               &               &              &                &               &              & X           &           \\ \hline
+Defesa do PF II                                                                                         &               &               &               &              &                &               &              &             & X         \\ \hline
+\end{tabular}
 }
-\caption{Cronograma do Projeto}
 \end{table}
