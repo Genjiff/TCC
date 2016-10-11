@@ -1,4 +1,6 @@
 \sigla{GPS}{Sistema de Posicionamento Global}
+\sigla{UX}{User Experience}
+\sigla{OBD}{On-Board Diagnostic}
 
 \chapter{Revisão da Literatura}
 \label{revisao-lit}
@@ -66,10 +68,10 @@ motorista durante a direção de um veículo:
 \subsection{Notificações e seu caráter interruptivo}
 \label{notificacao}
 
-\cite{iqbal2010notifications} define notificação como um sinal visual, audível ou táctil, gerado por uma aplicação
-ou serviço e que passa informação para um usuário que está fora de seu foco de atenção. Em dispositivos móveis,
-notificações geralmente são enviadas instantaneamente no momento em que ocorre alguma atividade que pode ser relevante
-para o usuário quando a aplicação não está aberta, ex: Um email novo, uma mensagem de texto que acaba de chegar ou um
+Notificação pode ser definida como um sinal visual, audível ou táctil, gerado por uma aplicação
+ou serviço e que passa informação para um usuário que está fora de seu foco de atenção \cite{iqbal2010notifications}.
+Em dispositivos móveis, notificações geralmente são enviadas instantaneamente no momento em que ocorre alguma atividade que pode ser relevante
+para o usuário quando a aplicação não está aberta, ex: um email novo, uma mensagem de texto que acaba de chegar ou um
 novo comentário em suas redes sociais. Em alguns casos o usuário toma ações imediatas após a chegada da notificação,
 enquanto em outros ela é simplesmente ignorada. Essas ações dependem da importância da notificação e do contexto do
 usuário \cite{sahami2014large}.
@@ -95,10 +97,17 @@ notificações apontando 1 nova mensagem cada.
 A área de notificação e a gaveta de notificação mostradas na figura \ref{notification-drawer} são áreas controladas pelo
 sistema operacional e que o usuário pode visualizar a qualquer momento.
 
-A maioria das notificações possui pelo menos uma ação atrelada a si. Uma ação permite que os usuários direcionem-se
-diretamente da notificação para uma tela específica do aplicativo, onde podem visualizar um ou mais eventos ou realizar outros trabalhos.
+A maioria das notificações possui pelo menos uma ação atrelada a si. Uma ação permite que os usuários passem
+diretamente da notificação para uma tela específica do aplicativo, onde podem visualizar um ou mais eventos ou realizar
+outros trabalhos.
 
 \section{Trabalhos Relacionados}
 \label{trabalhos-relacionados}
 
-\cite{chun2017exploring}
+\cite{park2016integrated} desenvolveu um sistema integrado com direção veicular para conduzir estudos de experiência
+do usuário (UX). Este sistema coleta dados do motorista e do veículo, analiza-os e provê um feedback visual baseado
+nas informações que o motorista precisa no momento. São utilizados sensores vestíveis para aquisição de dados
+fisiológicos e de movimentação do motorista, um OBD para obtenção de dados veiculares, um GPS veicular e as informações
+são exibidas em um aplicativo Android.
+
+\cite{eren2012estimating} apresenta um sistema
