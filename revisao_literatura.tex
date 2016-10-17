@@ -6,33 +6,7 @@
 \label{revisao-lit}
 Este capítulo aborda os principais fundamentos teóricos envolvidos na notificação oportuna de motoristas,
 tema central deste trabalho, e traz uma revisão dos trabalhos relacionados com o tema. São apresentados
-conceitos sobre contexto, interrupção e notificação. Ao final são apresentados alguns trabalhos correlatos.
-
-\section{Contexto}
-\label{contexto}
-Em 1991, \cite{weiser1991computer} cunha o termo "Computação Ubíqua", que se refere ao caráter invisível da
-integração de dispositivos computacionais diversos e da adaptação dos mesmos à necessidade do usuário no momento.
-Um elemento bastante importante para a Computação Ubíqua é o estudo do contexto.
-
-Contexto é definido por \cite{dey2001understanding} como "Qualquer informação que pode ser utilizada para
-caracterizar a situação de entidades (ex: um usuário, lugar ou objeto) e que é considerada relevante para
-a interação entre um usuário e uma aplicação, incluindo o próprio usuário e aplicação". Esta definição é
-a mais utilizada na área. Alguns exemplos de elementos de contexto são
-localização do usuário, identidade do usuário e tempo \cite{ryan1999enhanced}.
-
-Diversos sensores podem ser utilizados para determinar informações sobre o contexto do usuário. Alguns exemplos são
-sensores de localização (GPS), sensores de luz, acelerômetro e giroscópio.
-
-Informações de contexto são importantes para definir o estado atual do usuário e do ambiente onde ele está inserido,
-mas somente isto é insuficiente. Para utilizar estas informações satisfatoriamente é ideal que se construa um sistema
-adaptativo e que supra as necessidades do usuário em tempo real utilizando as informações de contexto. Resumindo,
-um sistema sensível ao contexto.
-
-Sistemas sensíveis ao contexto são capazes de adaptar suas operações ao contexto atual, sem intervenção
-explícita do usuário e têm como objetivo aumentar sua usabilidade e efetividade levando em conta elementos
-de contexto \cite{baldauf2007survey}.  Um sistema é sensível ao contexto se ele utiliza contexto para prover
-informações relevantes e/ou serviços para usuários, sendo que a relevância depende das tarefas do usuário
-\cite{abowd1999towards}.
+conceitos sobre interrupção, notificação e contexto. Ao final são apresentados alguns trabalhos correlatos.
 
 \section{Interrupção}
 \label{interrupcao}
@@ -41,16 +15,16 @@ Segundo \cite{ferreira2004novo}, interrupção é aquilo que faz parar uma açã
 algo. A interrupção durante a execução de uma tarefa pode ter vários efeitos adversos. \cite{lewin1927untersuchungen} diz
 que pessoas lembram melhor dos detalhes de tarefas que não foram interrompidas. \cite{zijlstra1999temporal} conclui que
 pessoas cometem mais erros em tarefas após uma interrupção. \cite{gillie1989makes} afirma que as pessoas executam tarefas
-mais vagarosamente após uma interrupção, se comparado com a performance pré-interrupção.
-
-TODO - falar mais sobre interrupção
-
-%A literatura indica que interrupções durante uma tarefa são bastante nocivas para a execução da mesma.
+mais vagarosamente após uma interrupção, se comparado com a performance pré-interrupção. Diante destas evidências, podemos
+afirmar que interrupções durante uma tarefa são bastante nocivas para a execução da mesma.
 
 \subsection{Interrupção de Motoristas}
 \label{interrupcao-motoristas}
 
-TODO - Desenvolver mais
+Trabalhos anteriores estudaram os efeitos da execução de tarefas concorrentes com a direção. \cite{monk2004recovering} cita
+que há diversos efeitos adversos ao executar tarefas cognitivas complexas durante a direção, como atraso na resposta a
+acontecimentos repentinos, desatenção a informações sinalizadas, diminuição do controle do veículo, estreitamento do campo
+de visão e mudanças de comportamento de frenagem e direção.
 
 Vários problemas na execução de uma tarefa após uma interrupção, como os citados na seção \ref{interrupcao}, afetam o
 motorista durante a direção de um veículo:
@@ -67,7 +41,12 @@ motorista durante a direção de um veículo:
 %A tabela 3.5 relaciona potenciais problemas que podem ser desencadeados pelas interrupções, citados na seção
 %\ref{interrupcao}, com o contexto de motoristas.
 
-\subsection{Notificações e seu caráter interruptivo}
+Estima-se que o uso de celular durante o ato de dirigir um veículo aumenta o risco de acidentes em 38\% \cite{laberge2001wireless}.
+Em paralelo a este fato, \cite{stothart2015attentional} afirma que apenas o ato de receber uma notificação, mesmo que ela não seja
+atendida, distrai o motorista tanto quanto receber uma ligação no celular ou responder uma mensagem de texto. Diante disso, é
+necessário estudar as notificações e sua capacidade de interromper tarefas.
+
+\section{Notificações e seu caráter interruptivo}
 \label{notificacao}
 
 Notificação pode ser definida como um sinal visual, audível ou táctil, gerado por uma aplicação
@@ -102,6 +81,35 @@ sistema operacional e que o usuário pode visualizar a qualquer momento.
 A maioria das notificações possui pelo menos uma ação atrelada a si. Uma ação permite que os usuários passem
 diretamente da notificação para uma tela específica do aplicativo, onde podem visualizar um ou mais eventos ou realizar
 outros trabalhos.
+
+\section{Contexto}
+\label{contexto}
+Em 1991, \cite{weiser1991computer} cunha o termo "Computação Ubíqua", que se refere ao caráter invisível da
+integração de dispositivos computacionais diversos e da adaptação dos mesmos à necessidade do usuário no momento.
+Um elemento bastante importante para a Computação Ubíqua é o estudo do contexto.
+
+Contexto é definido por \cite{dey2001understanding} como "Qualquer informação que pode ser utilizada para
+caracterizar a situação de entidades (ex: um usuário, lugar ou objeto) e que é considerada relevante para
+a interação entre um usuário e uma aplicação, incluindo o próprio usuário e aplicação". Esta definição é
+a mais utilizada na área. Alguns exemplos de elementos de contexto são
+localização do usuário, identidade do usuário e tempo \cite{ryan1999enhanced}.
+
+Diversos sensores podem ser utilizados para determinar informações sobre o contexto do usuário. Alguns exemplos são
+sensores de localização (GPS), sensores de luz, acelerômetro e giroscópio.
+
+Informações de contexto são importantes para definir o estado atual do usuário e do ambiente onde ele está inserido,
+mas somente isto é insuficiente. Para utilizar estas informações satisfatoriamente é ideal que se construa um sistema
+adaptativo e que supra as necessidades do usuário em tempo real utilizando as informações de contexto. Resumindo,
+um sistema sensível ao contexto.
+
+Sistemas sensíveis ao contexto são capazes de adaptar suas operações ao contexto atual, sem intervenção
+explícita do usuário e têm como objetivo aumentar sua usabilidade e efetividade levando em conta elementos
+de contexto \cite{baldauf2007survey}.  Um sistema é sensível ao contexto se ele utiliza contexto para prover
+informações relevantes e/ou serviços para usuários, sendo que a relevância depende das tarefas do usuário
+\cite{abowd1999towards}.
+
+Este trabalho propõe a construção de uma ferramenta que utilize contexto para a detecção de momentos oportunos para
+o envio de notificações a motoristas.
 
 \section{Trabalhos Relacionados}
 \label{trabalhos-relacionados}
