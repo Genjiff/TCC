@@ -4,3 +4,7 @@ aplicações estáticas antigamente
 utilizar contexto pode suprir necessidades do usuário instantaneamente(?)
 aplicações adaptativas
 com a popularização de dispositivos utilizar contexto é interessante e mais viável
+
+pensar num titulo que contemple o ambiente
+falar que é unico
+Mencionar que vai ser feito Android Nativo/Java na metodologia
