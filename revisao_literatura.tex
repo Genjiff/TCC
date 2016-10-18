@@ -42,11 +42,17 @@ motorista durante a direção de um veículo:
 
 Estima-se que o uso de celular durante o ato de dirigir um veículo aumenta o risco de acidentes em 38\% \cite{laberge2001wireless}.
 Em paralelo a este fato, \cite{stothart2015attentional} afirma que apenas o ato de receber uma notificação, mesmo que ela não seja
-atendida, distrai o motorista tanto quanto receber uma ligação no celular ou responder uma mensagem de texto. Diante disso, é
+atendida, distrai o motorista tanto quanto receber uma ligação no celular ou responder uma mensagem de texto. Ante este fato, é
 necessário estudar as notificações e sua capacidade de interromper tarefas.
 
 \section{Notificações e seu caráter interruptivo}
 \label{notificacao}
+
+TODO - Caráter interruptivo da notificação. Mencionar que no momento da chegada, alertas são realizados, a atenção do
+usuário é interrompida e ele foca no dispositivo.
+
+TODO - Gancho para seção de contexto. Meio que simples, pois é só citar que para saber o momento certo de notificar
+é importante saber a situação na qual o usuário se encontra e o ambiente a seu redor, que dá pra fazer utilizando contexto.
 
 Notificação pode ser definida como um sinal visual, audível ou táctil, gerado por uma aplicação
 ou serviço e que passa informação para um usuário que está fora de seu foco de atenção \cite{iqbal2010notifications}.
@@ -64,7 +70,7 @@ diferente. O horário de chegada aparece no canto direito de cada notificação.
 
 Notificações semelhantes geralmente são agrupadas para que não sejam exibidas inúmeras notificações com conteúdo parecido.
 Pode-se perceber na figura \ref{notification-drawer} que a maioria das notificações possui um indicativo de informações agrupadas
-ao invés de múltiplas notificações. Ex: O texto "3 new messages" que aponta que existem 3 novas mensagens, ao invés de 3
+ao invés de múltiplas notificações. Ex: O texto "\textit{3 new messages}" que aponta que existem 3 novas mensagens, ao invés de 3
 notificações apontando 1 nova mensagem cada.
 
 \begin{figure}[h]
@@ -83,8 +89,9 @@ outros trabalhos.
 
 \section{Contexto}
 \label{contexto}
-Em 1991, \cite{weiser1991computer} cunha o termo "Computação Ubíqua", que se refere ao caráter invisível da
-integração de dispositivos computacionais diversos e da adaptação dos mesmos à necessidade do usuário no momento.
+
+Em 1991 é cunhado o termo "Computação Ubíqua", que se refere ao caráter invisível da integração de dispositivos
+computacionais diversos e da adaptação dos mesmos à necessidade do usuário no momento \cite{weiser1991computer}.
 Um elemento bastante importante para a Computação Ubíqua é o estudo do contexto.
 
 Contexto é definido por \cite{dey2001understanding} como "Qualquer informação que pode ser utilizada para
@@ -108,10 +115,12 @@ informações relevantes e/ou serviços para usuários, sendo que a relevância 
 \cite{abowd1999towards}.
 
 Este trabalho propõe a construção de uma ferramenta que utilize contexto para a detecção de momentos oportunos para
-o envio de notificações a motoristas.
+o envio de notificações a motoristas, utilizando apenas sensores de um smartphone comum.
 
 \section{Trabalhos Relacionados}
 \label{trabalhos-relacionados}
+
+TODO - Criticar os trabalhos
 
 \cite{park2016integrated} desenvolveu um sistema integrado com direção veicular para conduzir estudos de experiência
 do usuário (UX). Este sistema coleta dados do motorista e do veículo, analiza-os e provê um feedback visual baseado
@@ -124,7 +133,8 @@ não seguro, utilizando algoritmo de detecção de melhor caminho e classificaç
 apenas sensores de smartphone (acelerômetro, giroscópio e magnetômetro) para adquirir dados de contexto e obteve
 resultados corretos em 14 casos de 15. \cite{johnson2011driving} apresenta um sistema semelhante também utilizando
 apenas sensores de smartphone e obteve cerca de 97\% de corretude. Estes resultados demonstram que é possível construir
-um mecanismo para predição de comportamento veicular utilizando apenas sensores do smartphone.
+um mecanismo para predição de comportamento veicular utilizando apenas sensores do smartphone e podem contribuir
+para este trabalho.
 
 Trabalhos anteriores também corroboram a tese de que é possível utilizar sensores para prever a interruptibilidade
 humana em um dado momento. \cite{fogarty2005predicting} construiu um modelo que utiliza sensores de áudio e vídeo
