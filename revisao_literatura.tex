@@ -13,15 +13,15 @@ conceitos sobre interrupção, notificação e contexto. Ao final são apresenta
 
 Segundo \citeonline{ferreira2004novo}, interrupção é aquilo que faz parar uma ação ou um estado; o ato de cortar a continuidade de
 algo. A interrupção durante a execução de uma tarefa pode ter vários efeitos adversos. \citeonline{lewin1927untersuchungen} diz
-que pessoas lembram melhor dos detalhes de tarefas que não foram interrompidas. \citeonline{zijlstra1999temporal} conclui que
-pessoas cometem mais erros em tarefas após uma interrupção. \citeonline{gillie1989makes} afirma que as pessoas executam tarefas
+que pessoas lembram melhor dos detalhes de tarefas que não foram interrompidas. \citeonline{zijlstra1999temporal} concluem que
+pessoas cometem mais erros em tarefas após uma interrupção. \citeonline{gillie1989makes} afirmam que as pessoas executam tarefas
 mais vagarosamente após uma interrupção, se comparado com a performance pré-interrupção. Diante destas evidências, pode-se
 afirmar que interrupções durante uma tarefa são bastante nocivas para a execução da mesma.
 
 \subsection{Interrupção de Motoristas}
 \label{interrupcao-motoristas}
 
-Trabalhos anteriores estudaram os efeitos da execução de tarefas concorrentes com a direção. \citeonline{monk2004recovering} cita
+Trabalhos anteriores estudaram os efeitos da execução de tarefas concorrentes com a direção. \citeonline{monk2004recovering} citam
 que há diversos efeitos adversos ao executar tarefas cognitivas complexas durante a direção, como atraso na resposta a
 acontecimentos repentinos, desatenção a informações sinalizadas, diminuição do controle do veículo, estreitamento do campo
 de visão e mudanças de comportamento de frenagem e direção.
@@ -39,7 +39,7 @@ motorista durante a direção de um veículo:
 \end{itemize}
 
 Estima-se que o uso de celular durante o ato de dirigir um veículo aumenta o risco de acidentes em 38\% \cite{laberge2001wireless}.
-Em paralelo a este fato, \citeonline{stothart2015attentional} afirma que apenas o ato de receber uma notificação, mesmo que ela não seja
+Em paralelo a este fato, \citeonline{stothart2015attentional} afirmam que apenas o ato de receber uma notificação, mesmo que ela não seja
 atendida, distrai o motorista tanto quanto receber uma ligação no celular ou responder uma mensagem de texto. Ante este fato, é
 necessário estudar as notificações e sua capacidade de interromper tarefas.
 
@@ -55,13 +55,13 @@ enquanto em outros ela é simplesmente ignorada. Essas ações dependem da impor
 usuário \cite{sahami2014large}.
 
 Em dispositivos móveis uma notificação é uma mensagem que pode ser exibida ao usuário fora da interface normal de um aplicativo.
-Quando o aplicativo emite uma notificação, ela primeiro aparece como um ícone na área de notificação. Para ver os detalhes da
-notificação, o usuário abre a gaveta de notificação \cite{notificationDrawer}. A figura \ref{notification-drawer} mostra
-o layout da gaveta de notificações no Android. Cada retângulo branco preenchido com ícones e texto representa uma notificação
-diferente. O horário de chegada aparece no canto direito de cada notificação.
+Quando o aplicativo emite uma notificação, ela primeiro aparece como um ícone na área de notificação. No sistema operacional móvel
+Android \cite{android}, para ver os detalhes da notificação, o usuário abre a gaveta de notificação \cite{notificationDrawer}. A Figura
+\ref{notification-drawer} mostra o layout da gaveta de notificações no Android. Cada retângulo branco preenchido com ícones
+e texto representa uma notificação diferente. O horário de chegada aparece no canto direito de cada notificação.
 
 Notificações semelhantes geralmente são agrupadas para que não sejam exibidas inúmeras notificações com conteúdo parecido.
-Pode-se perceber na figura \ref{notification-drawer} que a maioria das notificações possui um indicativo de informações agrupadas
+Pode-se perceber na Figura \ref{notification-drawer} que a maioria das notificações possui um indicativo de informações agrupadas
 ao invés de múltiplas notificações. Ex: O texto "\textit{3 new messages}" que aponta que existem 3 novas mensagens, ao invés de 3
 notificações apontando 1 nova mensagem cada.
 
@@ -76,17 +76,17 @@ outros trabalhos.
 \label{notification-drawer}
 \end{figure}
 
-A área de notificação e a gaveta de notificação mostradas na figura \ref{notification-drawer} são áreas controladas pelo
+A área de notificação e a gaveta de notificação mostradas na Figura \ref{notification-drawer} são áreas controladas pelo
 sistema operacional e que o usuário pode visualizar a qualquer momento.
 
 Cada vez que um dispositivo provê informação proativamente (ex: Notificando que há um novo comentário em suas redes
 sociais) ele está competindo pela atenção do usuário e possívelmente interrompendo tarefas que estão acontecendo no momento
 \cite{ho2005using}. Alguns estudos tentaram entender a relação dos usuários com este efeito adverso.
 
-\citeonline{oulasvirta2012habits} discorre sobre os hábitos de uso de smartphones. O autor descobriu que o rápido acesso a
+\citeonline{oulasvirta2012habits} discorrem sobre os hábitos de uso de smartphones. O autor descobriu que o rápido acesso a
 conteúdo dinâmico pode criar hábitos, que ficam mais fortes com o aumento da frequência de uso do dispositivo. Ele
 também menciona que estes hábitos são uma característica particular do uso de smartphones e que ainda não são percebidos
-pela sociedade como problemáticos. \citeonline{iqbal2010notifications} conclui em seu estudo que usuários valorizam o sentimento
+pela sociedade como problemáticos. \citeonline{iqbal2010notifications} concluem em seu estudo que usuários valorizam o sentimento
 de informação que as notificações trazem e que, mesmo cientes de seus efeitos interruptivos, preferem manter este sentimento.
 
 Estes achados permitem a conclusão que apesar de sua capacidade interruptiva, notificações são valorizadas pelos
@@ -127,27 +127,27 @@ o envio de notificações a motoristas, utilizando apenas sensores de um smartph
 \section{Trabalhos Relacionados}
 \label{trabalhos-relacionados}
 
-\citeonline{park2016integrated} desenvolveu um sistema integrado com direção veicular para conduzir estudos de experiência
+\citeonline{park2016integrated} desenvolveram um sistema integrado com direção veicular para conduzir estudos de experiência
 do usuário (UX). Este sistema coleta dados do motorista e do veículo, analiza-os e provê um feedback visual baseado
 nas informações que o motorista precisa no momento. São utilizados sensores vestíveis para aquisição de dados
-fisiológicos e de movimentação do motorista, um dispositivo OBD para obtenção de dados veiculares, um GPS veicular e
-as informações são exibidas em um aplicativo Android.
+fisiológicos e de movimentação do motorista, um dispositivo OBD (\textit{On-Board Diagnostic}, em português Sistema de Diagnóstico
+de Bordo) para obtenção de dados veiculares, um GPS veicular e as informações são exibidas em um aplicativo Android.
 
-\citeonline{eren2012estimating} apresenta um sistema para estimar o comportamento na direção de motoristas como seguro ou
+\citeonline{eren2012estimating} apresentam um sistema para estimar o comportamento na direção de motoristas como seguro ou
 não seguro, utilizando algoritmo de detecção de melhor caminho e classificação Bayesiana. Este sistema utiliza
 apenas sensores de smartphone (acelerômetro, giroscópio e magnetômetro) para adquirir dados de contexto e obteve
-resultados corretos em 14 casos de 15. \citeonline{johnson2011driving} apresenta um sistema semelhante também utilizando
+resultados corretos em 14 casos de 15. \citeonline{johnson2011driving} apresentam um sistema semelhante também utilizando
 apenas sensores de smartphone e obteve cerca de 97\% de corretude. Estes resultados demonstram que é possível construir
 um mecanismo para predição de comportamento veicular utilizando apenas sensores do smartphone e podem contribuir
 para este trabalho.
 
 Trabalhos anteriores também corroboram a tese de que é possível utilizar sensores para prever a interruptibilidade
-humana em um dado momento. \citeonline{fogarty2005predicting} construiu um modelo que utiliza sensores de áudio e vídeo
+humana em um dado momento. \citeonline{fogarty2005predicting} construiram um modelo que utiliza sensores de áudio e vídeo
 para estimar a interruptibilidade de trabalhadores de escritório em um dado momento. \citeonline{hudson2003predicting}
-construiu um modelo semelhante utilizando os mesmos sensores e obteve uma média de 75\% de acurácia na predição de
+construiram um modelo semelhante utilizando os mesmos sensores e obteve uma média de 75\% de acurácia na predição de
 interruptibilidade de trabalhadores de escritório.
 
-\citeonline{kim2015sensors} desenvolveu um classificador utilizando aprendizagem de máquina para detectar a interruptibilidade
+\citeonline{kim2015sensors} desenvolveram um classificador utilizando aprendizagem de máquina para detectar a interruptibilidade
 de motoristas em um momento. Para a coleta de dados foram utilizados um sensor fisiológico vestível, quatro sensores
 de movimento também vestíveis, câmeras direcionadas ao tráfego e ao motorista e um dispositivo OBD. O classificador
 construído obteve 94\% de precisão na detecção de momentos oportunos para interrupção de motoristas. O presente
