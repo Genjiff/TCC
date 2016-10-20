@@ -1,6 +1,6 @@
 \sigla{GPS}{Sistema de Posicionamento Global}
-\sigla{UX}{User Experience}
-\sigla{OBD}{On-Board Diagnostic}
+\sigla{UX}{\textit{User Experience}}
+\sigla{OBD}{\textit{On-Board Diagnostic}}
 
 \chapter{Revisão da Literatura}
 \label{revisao-lit}
@@ -11,17 +11,17 @@ conceitos sobre interrupção, notificação e contexto. Ao final são apresenta
 \section{Interrupção}
 \label{interrupcao}
 
-Segundo \cite{ferreira2004novo}, interrupção é aquilo que faz parar uma ação ou um estado; o ato de cortar a continuidade de
-algo. A interrupção durante a execução de uma tarefa pode ter vários efeitos adversos. \cite{lewin1927untersuchungen} diz
-que pessoas lembram melhor dos detalhes de tarefas que não foram interrompidas. \cite{zijlstra1999temporal} conclui que
-pessoas cometem mais erros em tarefas após uma interrupção. \cite{gillie1989makes} afirma que as pessoas executam tarefas
+Segundo \citeonline{ferreira2004novo}, interrupção é aquilo que faz parar uma ação ou um estado; o ato de cortar a continuidade de
+algo. A interrupção durante a execução de uma tarefa pode ter vários efeitos adversos. \citeonline{lewin1927untersuchungen} diz
+que pessoas lembram melhor dos detalhes de tarefas que não foram interrompidas. \citeonline{zijlstra1999temporal} conclui que
+pessoas cometem mais erros em tarefas após uma interrupção. \citeonline{gillie1989makes} afirma que as pessoas executam tarefas
 mais vagarosamente após uma interrupção, se comparado com a performance pré-interrupção. Diante destas evidências, pode-se
 afirmar que interrupções durante uma tarefa são bastante nocivas para a execução da mesma.
 
 \subsection{Interrupção de Motoristas}
 \label{interrupcao-motoristas}
 
-Trabalhos anteriores estudaram os efeitos da execução de tarefas concorrentes com a direção. \cite{monk2004recovering} cita
+Trabalhos anteriores estudaram os efeitos da execução de tarefas concorrentes com a direção. \citeonline{monk2004recovering} cita
 que há diversos efeitos adversos ao executar tarefas cognitivas complexas durante a direção, como atraso na resposta a
 acontecimentos repentinos, desatenção a informações sinalizadas, diminuição do controle do veículo, estreitamento do campo
 de visão e mudanças de comportamento de frenagem e direção.
@@ -39,7 +39,7 @@ motorista durante a direção de um veículo:
 \end{itemize}
 
 Estima-se que o uso de celular durante o ato de dirigir um veículo aumenta o risco de acidentes em 38\% \cite{laberge2001wireless}.
-Em paralelo a este fato, \cite{stothart2015attentional} afirma que apenas o ato de receber uma notificação, mesmo que ela não seja
+Em paralelo a este fato, \citeonline{stothart2015attentional} afirma que apenas o ato de receber uma notificação, mesmo que ela não seja
 atendida, distrai o motorista tanto quanto receber uma ligação no celular ou responder uma mensagem de texto. Ante este fato, é
 necessário estudar as notificações e sua capacidade de interromper tarefas.
 
@@ -83,16 +83,16 @@ Cada vez que um dispositivo provê informação proativamente (ex: Notificando q
 sociais) ele está competindo pela atenção do usuário e possívelmente interrompendo tarefas que estão acontecendo no momento
 \cite{ho2005using}. Alguns estudos tentaram entender a relação dos usuários com este efeito adverso.
 
-\cite{oulasvirta2012habits} discorre sobre os hábitos de uso de smartphones. O autor descobriu que o rápido acesso a
+\citeonline{oulasvirta2012habits} discorre sobre os hábitos de uso de smartphones. O autor descobriu que o rápido acesso a
 conteúdo dinâmico pode criar hábitos, que ficam mais fortes com o aumento da frequência de uso do dispositivo. Ele
 também menciona que estes hábitos são uma característica particular do uso de smartphones e que ainda não são percebidos
-pela sociedade como problemáticos. \cite{iqbal2010notifications} conclui em seu estudo que usuários valorizam o sentimento
+pela sociedade como problemáticos. \citeonline{iqbal2010notifications} conclui em seu estudo que usuários valorizam o sentimento
 de informação que as notificações trazem e que, mesmo cientes de seus efeitos interruptivos, preferem manter este sentimento.
 
 Estes achados permitem a conclusão que apesar de sua capacidade interruptiva, notificações são valorizadas pelos
 usuários e fazem parte do próprio hábito de uso dos smartphones. Por este motivo, é necessário que se diminua o potencial
-interruptivo das notificações, o que pode ser conseguido utilizando contexto, como sinalizam alguns autores \cite{ho2005using}
-\cite{kern2003context} \cite{iqbal2010notifications}.
+interruptivo das notificações, o que pode ser conseguido utilizando contexto, como sinalizam alguns autores
+\cite{ho2005using, kern2003context, iqbal2010notifications}.
 
 \section{Contexto}
 \label{contexto}
@@ -101,7 +101,7 @@ Em 1991 é cunhado o termo "Computação Ubíqua", que se refere ao caráter inv
 computacionais diversos e da adaptação dos mesmos à necessidade do usuário no momento \cite{weiser1991computer}.
 Um elemento bastante importante para a Computação Ubíqua é o estudo do contexto.
 
-Contexto é definido por \cite{dey2001understanding} como "Qualquer informação que pode ser utilizada para
+Contexto é definido por \citeonline{dey2001understanding} como "Qualquer informação que pode ser utilizada para
 caracterizar a situação de entidades (ex: um usuário, lugar ou objeto) e que é considerada relevante para
 a interação entre um usuário e uma aplicação, incluindo o próprio usuário e aplicação". Esta definição é
 a mais utilizada na área. Alguns exemplos de elementos de contexto são
@@ -127,29 +127,27 @@ o envio de notificações a motoristas, utilizando apenas sensores de um smartph
 \section{Trabalhos Relacionados}
 \label{trabalhos-relacionados}
 
-TODO - Criticar os trabalhos
-
-\cite{park2016integrated} desenvolveu um sistema integrado com direção veicular para conduzir estudos de experiência
+\citeonline{park2016integrated} desenvolveu um sistema integrado com direção veicular para conduzir estudos de experiência
 do usuário (UX). Este sistema coleta dados do motorista e do veículo, analiza-os e provê um feedback visual baseado
 nas informações que o motorista precisa no momento. São utilizados sensores vestíveis para aquisição de dados
 fisiológicos e de movimentação do motorista, um dispositivo OBD para obtenção de dados veiculares, um GPS veicular e
 as informações são exibidas em um aplicativo Android.
 
-\cite{eren2012estimating} apresenta um sistema para estimar o comportamento na direção de motoristas como seguro ou
+\citeonline{eren2012estimating} apresenta um sistema para estimar o comportamento na direção de motoristas como seguro ou
 não seguro, utilizando algoritmo de detecção de melhor caminho e classificação Bayesiana. Este sistema utiliza
 apenas sensores de smartphone (acelerômetro, giroscópio e magnetômetro) para adquirir dados de contexto e obteve
-resultados corretos em 14 casos de 15. \cite{johnson2011driving} apresenta um sistema semelhante também utilizando
+resultados corretos em 14 casos de 15. \citeonline{johnson2011driving} apresenta um sistema semelhante também utilizando
 apenas sensores de smartphone e obteve cerca de 97\% de corretude. Estes resultados demonstram que é possível construir
 um mecanismo para predição de comportamento veicular utilizando apenas sensores do smartphone e podem contribuir
 para este trabalho.
 
 Trabalhos anteriores também corroboram a tese de que é possível utilizar sensores para prever a interruptibilidade
-humana em um dado momento. \cite{fogarty2005predicting} construiu um modelo que utiliza sensores de áudio e vídeo
-para estimar a interruptibilidade de trabalhadores de escritório em um dado momento. \cite{hudson2003predicting}
+humana em um dado momento. \citeonline{fogarty2005predicting} construiu um modelo que utiliza sensores de áudio e vídeo
+para estimar a interruptibilidade de trabalhadores de escritório em um dado momento. \citeonline{hudson2003predicting}
 construiu um modelo semelhante utilizando os mesmos sensores e obteve uma média de 75\% de acurácia na predição de
 interruptibilidade de trabalhadores de escritório.
 
-\cite{kim2015sensors} desenvolveu um classificador utilizando aprendizagem de máquina para detectar a interruptibilidade
+\citeonline{kim2015sensors} desenvolveu um classificador utilizando aprendizagem de máquina para detectar a interruptibilidade
 de motoristas em um momento. Para a coleta de dados foram utilizados um sensor fisiológico vestível, quatro sensores
 de movimento também vestíveis, câmeras direcionadas ao tráfego e ao motorista e um dispositivo OBD. O classificador
 construído obteve 94\% de precisão na detecção de momentos oportunos para interrupção de motoristas. O presente
