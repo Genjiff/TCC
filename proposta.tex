@@ -5,18 +5,20 @@ Metodologia, Resultados Esperados e Cronograma.
 
 \section{Metodologia}
 \label{metodologia}
-\begin{itemize}
+
+\begin{enumerate}
   \item Serão identificados momentos oportunos para interrupção de motoristas a partir da leitura de artigos
-    relacionados;
-  \item Será feita a concepção e definição do escopo do artefato a ser desenvolvido, de forma que atenda a
-    todos os objetivos específicos;
-  \item A solução será projetada na forma de uma biblioteca que prediz momentos oportunos para a interrupção
-    de motoristas;
-  \item A biblioteca será desenvolvida para dispositivos do sistema operacional Android;
-  \item A biblioteca será incluída no aplicativo Meu Possante \cite{meupossante} e serão feitos testes que analisem se ela funciona
-    corretamente;
-  \item A solução será testada e avaliada;
-\end{itemize}
+relacionados;
+  \item Serão escolhidos os sensores de smartphone que a aplicação utilizará para coletar dados contextuais, para
+que seja possível identificar corretamente os momentos indicados no passo 1;
+  \item Um aplicativo Android será criado para coleta de dados dos sensores escolhidos no passo 2;
+  \item Será feita uma experimentação em situações reais de direção veicular, de forma a relacionar os valores indicados
+nos sensores com momentos oportunos para interrupção;
+  \item Será feita a investigação e escolha do melhor algoritmo de aprendizado de máquina para classificação dos dados,
+baseado nos dados preliminares obtidos no passo anterior. Esta investigação será feita através da ferramenta Weka
+\cite{hall2009weka};
+  \item Será feito um estudo de caso para a avaliação dos resultados utilizando o modelo obtido no passo anterior;
+\end{enumerate}
 
 \section{Resultados Esperados}
 \label{resultados}
@@ -25,28 +27,27 @@ Ao final deste trabalho espera-se ter um mecanismo que faça a predição autom�
 interrupção de motoristas, implementado na forma de uma biblioteca que poderá ser utilizada por qualquer aplicativo
 do sistema operacional Android.
 
-\clearpage
-
 \section{Cronograma}
 \label{cronograma}
 
-\begin{table}[htp!]
+\begin{table}[h]
 \centering
 \resizebox{\textwidth}{!}{
 \begin{tabular}{|r|c|c|c|c|c|c|c|c|c|}
 \hline
-\multicolumn{1}{|c|}{\multirow{2}{*}{Atividade}}                                                        & \multicolumn{2}{c|}{Dezembro} & \multicolumn{2}{c|}{Janeiro} & \multicolumn{2}{c|}{Fevereiro} & \multicolumn{2}{c|}{Março} & Abril     \\ \cline{2-10}
-\multicolumn{1}{|c|}{}                                                                                  & 1ª quinz.     & 2ª quinz.     & 1ª quinz.     & 2ª quinz.    & 1ª quinz.      & 2ª quinz.     & 1ª quinz.    & 2ª quinz.   & 1ª quinz. \\ \hline
-\begin{tabular}[c]{@{}r@{}}Pesquisa de momentos oportunos\\ para interrupção de motoristas\end{tabular} & X             & X             &               &              &                &               &              &             &           \\ \hline
-\begin{tabular}[c]{@{}r@{}}Elaboração da arquitetura\\ da biblioteca\end{tabular}                       &               & X             & X             &              &                &               &              &             &           \\ \hline
-\begin{tabular}[c]{@{}r@{}}Testes com sensores\\ que serão utilizados\end{tabular}                      &               &               & X             &              &                &               &              &             &           \\ \hline
-Desenvolvimento da biblioteca                                                                           &               &               & X             & X            & X              & X             &              &             &           \\ \hline
-\begin{tabular}[c]{@{}r@{}}Implementação no aplicativo\\ Meu Possante\end{tabular}                      &               &               &               &              &                & X             &              &             &           \\ \hline
-Testes no aplicativo                                                                                    &               &               &               &              &                & X             &              &             &           \\ \hline
-Avaliação da solução                                                                                    &               &               &               &              &                &               & X            &             &           \\ \hline
-Escrita da monografia                                                                                   &               & X             & X             & X            & X              & X             & X            & X           &           \\ \hline
-Entrega do projeto                                                                                      &               &               &               &              &                &               &              & X           &           \\ \hline
-Defesa do PF II                                                                                         &               &               &               &              &                &               &              &             & X         \\ \hline
+\multicolumn{1}{|c|}{\multirow{2}{*}{Atividade}}                                                             & \multicolumn{2}{c|}{Dezembro} & \multicolumn{2}{c|}{Janeiro} & \multicolumn{2}{c|}{Fevereiro} & \multicolumn{2}{c|}{Março} & Abril     \\ \cline{2-10}
+\multicolumn{1}{|c|}{}                                                                                       & 1ª quinz.     & 2ª quinz.     & 1ª quinz.     & 2ª quinz.    & 1ª quinz.      & 2ª quinz.     & 1ª quinz.    & 2ª quinz.   & 1ª quinz. \\ \hline
+\begin{tabular}[c]{@{}r@{}}Pesquisa de momentos oportunos\\ para interrupção de motoristas\end{tabular}      & X             &               &               &              &                &               &              &             &           \\ \hline
+\begin{tabular}[c]{@{}r@{}}Pesquisa de sensores utilizados para\\ obtenção de dados contextuais\end{tabular} & X             &               &               &              &                &               &              &             &           \\ \hline
+\begin{tabular}[c]{@{}r@{}}Elaboração da arquitetura do\\ aplicativo\end{tabular}                            &               & X             & X             &              &                &               &              &             &           \\ \hline
+\begin{tabular}[c]{@{}r@{}}Testes com sensores que serão\\ utilizados\end{tabular}                           &               &               &               & X            &                &               &              &             &           \\ \hline
+Desenvolvimento do aplicativo                                                                                &               &               & X             & X            & X              & X             &              &             &           \\ \hline
+Experimentação                                                                                               &               &               &               &              &                & X             &              &             &           \\ \hline
+\begin{tabular}[c]{@{}r@{}}Escolha do algoritmo de\\ aprendizado de máquina\end{tabular}                     &               &               &               &              &                &               & X            &             &           \\ \hline
+Estudo de caso                                                                                               &               &               &               &              &                &               & X            &             &           \\ \hline
+Escrita da monografia                                                                                        &               & X             & X             & X            & X              & X             & X            & X           &           \\ \hline
+Entrega do projeto                                                                                           &               &               &               &              &                &               &              & X           &           \\ \hline
+Defesa do PF II                                                                                              &               &               &               &              &                &               &              &             & X         \\ \hline
 \end{tabular}
 }
 \end{table}
