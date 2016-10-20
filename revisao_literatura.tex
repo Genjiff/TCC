@@ -127,11 +127,15 @@ o envio de notificações a motoristas, utilizando apenas sensores de um smartph
 \section{Trabalhos Relacionados}
 \label{trabalhos-relacionados}
 
-\citeonline{park2016integrated} desenvolveram um sistema integrado com direção veicular para conduzir estudos de experiência
-do usuário (UX). Este sistema coleta dados do motorista e do veículo, analiza-os e provê um feedback visual baseado
-nas informações que o motorista precisa no momento. São utilizados sensores vestíveis para aquisição de dados
-fisiológicos e de movimentação do motorista, um dispositivo OBD (\textit{On-Board Diagnostic}, em português Sistema de Diagnóstico
-de Bordo) para obtenção de dados veiculares, um GPS veicular e as informações são exibidas em um aplicativo Android.
+Em pesquisas preliminares não encontramos nenhuma aplicação, solução ou proposta que construiu um mecanismo para
+notificação de motoristas em momentos oportunos utilizando contexto. Entretanto, encontramos projetos de aplicações que
+usam dados de contexto para detectar aspectos relacionados ao comportamento de motoristas.
+
+\citeonline{kim2015sensors} desenvolveram um classificador utilizando aprendizagem de máquina para detectar a interruptibilidade
+de motoristas em um momento. Para a coleta de dados foram utilizados um sensor fisiológico vestível, quatro sensores
+de movimento também vestíveis, câmeras direcionadas ao tráfego e ao motorista e um dispositivo OBD. O classificador
+construído obteve 94\% de precisão na detecção de momentos oportunos para interrupção de motoristas. O presente
+trabalho visa construir um classificador semelhante, com o diferencial de utilizar apenas sensores de smartphone.
 
 \citeonline{eren2012estimating} apresentam um sistema para estimar o comportamento na direção de motoristas como seguro ou
 não seguro, utilizando algoritmo de detecção de melhor caminho e classificação Bayesiana. Este sistema utiliza
@@ -141,14 +145,14 @@ apenas sensores de smartphone e obteve cerca de 97\% de corretude. Estes resulta
 um mecanismo para predição de comportamento veicular utilizando apenas sensores do smartphone e podem contribuir
 para este trabalho.
 
+\citeonline{park2016integrated} desenvolveram um sistema integrado com direção veicular para conduzir estudos de experiência
+do usuário (UX). Este sistema coleta dados do motorista e do veículo, analiza-os e provê um feedback visual baseado
+nas informações que o motorista precisa no momento. São utilizados sensores vestíveis para aquisição de dados
+fisiológicos e de movimentação do motorista, um dispositivo OBD (\textit{On-Board Diagnostic}, em português Sistema de Diagnóstico
+de Bordo) para obtenção de dados veiculares, um GPS veicular e as informações são exibidas em um aplicativo Android.
+
 Trabalhos anteriores também corroboram a tese de que é possível utilizar sensores para prever a interruptibilidade
 humana em um dado momento. \citeonline{fogarty2005predicting} construiram um modelo que utiliza sensores de áudio e vídeo
 para estimar a interruptibilidade de trabalhadores de escritório em um dado momento. \citeonline{hudson2003predicting}
 construiram um modelo semelhante utilizando os mesmos sensores e obteve uma média de 75\% de acurácia na predição de
 interruptibilidade de trabalhadores de escritório.
-
-\citeonline{kim2015sensors} desenvolveram um classificador utilizando aprendizagem de máquina para detectar a interruptibilidade
-de motoristas em um momento. Para a coleta de dados foram utilizados um sensor fisiológico vestível, quatro sensores
-de movimento também vestíveis, câmeras direcionadas ao tráfego e ao motorista e um dispositivo OBD. O classificador
-construído obteve 94\% de precisão na detecção de momentos oportunos para interrupção de motoristas. O presente
-trabalho visa construir um classificador semelhante, com o diferencial de utilizar apenas sensores de smartphone.
