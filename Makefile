@@ -1,6 +1,6 @@
 # aptitude install abntex texlive-latex-extra
 
-SOURCEDOCUMENT=anteprojeto
+SOURCEDOCUMENT=tcc
 PDFVIEWER=evince
 CAPITULOS=$(wildcard *.tex)
 
