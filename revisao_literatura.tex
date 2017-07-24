@@ -152,17 +152,42 @@ oportunos para interrupção de motoristas.
 
 %O presente trabalho visa construir um classificador semelhante, com o diferencial de utilizar apenas sensores de smartphone.
 
-\citeonline{eren2012estimating} apresentam um sistema para estimar o comportamento na direção de motoristas como seguro ou
-não seguro, utilizando algoritmo de detecção de melhor caminho e classificação Bayesiana. Este sistema utiliza
-apenas sensores de smartphone (acelerômetro, giroscópio e magnetômetro) para adquirir dados de contexto e obteve
-resultados corretos em 14 casos de 15. \citeonline{johnson2011driving} apresentam um sistema semelhante também utilizando
-apenas sensores de smartphone e obteve cerca de 97\% de corretude. Estes resultados demonstram que é possível construir
+\citeonline{johnson2011driving} apresentam o MIROAD (sigla em inglês para Plataforma Móvel para Reconhecimento
+Inteligente de Direção Agressiva), que é um sistema para detectar comportamentos agressivos durante a direção de um veículo, utilizando
+apenas sensores de smartphone. Os sensores utilizados são a câmera traseira, acelerômetro, giroscópio e GPS. O setup utilizado para este
+sistema está demonstrado na figura \ref{miroad}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\textwidth]{miroad}
+\caption{Sensores utilizados no MIROAD. \cite{johnson2011driving}}
+\label{miroad}
+\end{figure}
+
+O MIROAD coleta dados continuamente do acelerômetro e giroscópio para detectar algumas manobras específicas, como curvas acentuadas
+e acelerações e freadas instantâneas.
+Um experimento foi feito  e obteve cerca de 97\% de corretude. Estes resultados demonstram que é possível construir
 um mecanismo para predição de comportamento veicular utilizando apenas sensores do smartphone e contribuem para a motivação deste trabalho.
 
-\citeonline{park2016integrated} desenvolveram um sistema integrado com direção veicular para conduzir estudos de experiência
+\citeonline{eren2012estimating} apresentam um trabalho semelhante que tenta estimar o comportamento na direção de motoristas como seguro ou
+não seguro, utilizando algoritmo de detecção de melhor caminho e classificação Bayesiana. Este sistema utiliza
+apenas sensores de smartphone (acelerômetro, giroscópio e magnetômetro) para adquirir dados de contexto e obteve
+resultados corretos em 14 casos de 15.
+
+\citeonline{park2016integrated} desenvolveram um sistema integrado com direção veicular chamado de IDAS para conduzir estudos de experiência
 do usuário (UX). Este sistema coleta dados do motorista e do veículo, analiza-os e provê um feedback visual baseado
 nas informações que o motorista precisa no momento. São utilizados sensores vestíveis para aquisição de dados
-fisiológicos e de movimentação do motorista, um dispositivo OBD para obtenção de dados veiculares, um GPS veicular e as informações são exibidas em um aplicativo Android.
+fisiológicos e de movimentação do motorista, um dispositivo OBD para obtenção de dados veiculares, um GPS veicular e as informações
+são exibidas em um aplicativo Android. O setup utilizado é mostrado na figura \ref{idas}.
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.7\textwidth]{idas}
+\caption{Sensores utilizados no IDAS. \cite{park2016integrated}}
+\label{idas}
+\end{figure}
+
+O trabalho
 
 Trabalhos anteriores também corroboram a tese de que é possível utilizar sensores para prever a interruptibilidade
 humana em um dado momento. \citeonline{fogarty2005predicting} construiram um modelo que utiliza sensores de áudio e vídeo
