@@ -133,19 +133,31 @@ notificação de motoristas em momentos oportunos utilizando contexto. Entretant
 usam dados de contexto para detectar aspectos relacionados ao comportamento de motoristas.
 
 \citeonline{kim2015sensors} desenvolveram um classificador utilizando aprendizagem de máquina para detectar a interruptibilidade
-de motoristas em um momento. Para a coleta de dados foram utilizados um sensor fisiológico vestível, quatro sensores
+de motoristas em um dado momento. Para a coleta de dados foram utilizados um sensor fisiológico vestível, quatro sensores
 de movimento também vestíveis, câmeras direcionadas ao tráfego e ao motorista e um dispositivo OBD (\textit{On-Board Diagnostic},
-em português Sistema de Diagnóstico de Bordo). O classificador construído obteve 94\% de precisão na detecção de
-momentos oportunos para interrupção de motoristas. O presente trabalho visa construir um classificador semelhante,
-com o diferencial de utilizar apenas sensores de smartphone.
+em português Sistema de Diagnóstico de Bordo), como mostrado na figura \ref{kim-sensors}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{kim-sensors}
+\caption{Sensores utilizados no trabalho de \citeonline{kim2015sensors}.}
+\label{kim-sensors}
+\end{figure}
+
+Um experimento foi feito com 25 motoristas (14 mulheres e 11 homens) com idade entre 19 e 69 anos e consistia em 2 seções
+onde os motoristas dirigiam de um ponto a outro. O resultado do experimento mostrou que interrupções têm menos impacto em um motorista
+quando ele não está com nenhuma das mãos no volante ou quando está interagindo com um periférico (controlador do ar condicionado, por exemplo).
+O classificador para detecção de interruptibilidade construído obteve 94\% de precisão na detecção de momentos
+oportunos para interrupção de motoristas.
+
+%O presente trabalho visa construir um classificador semelhante, com o diferencial de utilizar apenas sensores de smartphone.
 
 \citeonline{eren2012estimating} apresentam um sistema para estimar o comportamento na direção de motoristas como seguro ou
 não seguro, utilizando algoritmo de detecção de melhor caminho e classificação Bayesiana. Este sistema utiliza
 apenas sensores de smartphone (acelerômetro, giroscópio e magnetômetro) para adquirir dados de contexto e obteve
 resultados corretos em 14 casos de 15. \citeonline{johnson2011driving} apresentam um sistema semelhante também utilizando
 apenas sensores de smartphone e obteve cerca de 97\% de corretude. Estes resultados demonstram que é possível construir
-um mecanismo para predição de comportamento veicular utilizando apenas sensores do smartphone e podem contribuir
-para este trabalho.
+um mecanismo para predição de comportamento veicular utilizando apenas sensores do smartphone e contribuem para a motivação deste trabalho.
 
 \citeonline{park2016integrated} desenvolveram um sistema integrado com direção veicular para conduzir estudos de experiência
 do usuário (UX). Este sistema coleta dados do motorista e do veículo, analiza-os e provê um feedback visual baseado
