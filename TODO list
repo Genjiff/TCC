@@ -4,9 +4,13 @@
 - Terminar de implementar mudança de faixa DONE
 - Definir dois momentos oportunos
   - Velocidade baixa (?)
+    - Implementar sensor de velocidade DONE
   - Carro parado (?)
-- Implementar esses momentos
-- Incorporar todo o código no Meu Possante
+  - Algo a ver com aceleração (?)
+    - Implementar acelerômetro DONE
+  - Fechar os momentos com Alberto
+- Implementar esses momentos (60%)
+- Incorporar todo o código no Meu Possante (60%)
 - Definir experimento
 - Executar experimento
 - Escrever sobre experimento
