@@ -11,11 +11,11 @@ evitados a acidentes ocasionados por falhas mecânicas.
 
 Em 2016, mais de 2 milhões de automóveis foram vendidos no Brasil
 \cite{fenabrave}. Dentre este número, é seguro assumir que poucos de seus
-proprietários são especialistas em mecânica e muitos possuem dúvidas sobre o
+proprietários são especialistas em mecânica e possuem dúvidas sobre o
 funcionamento das peças do seu veículo, além de não saber exatamente em qual
 momento deve-se trocar cada uma de suas peças. Estas informações geralmente
 estão no manual do veículo, mas é inviável para uma pessoa leiga memorizar
-tudo isto.
+todas estas informações.
 
 Após a compra de um automóvel, a sua manutenção é de inteira responsabilidade
 do proprietário. Todas as operações de manutenção, especificadas pelo fabricante,
@@ -33,4 +33,41 @@ O uso de um aplicativo para celular pode ser uma grande ajuda na decisão de qua
 é necessário a revisão e troca de peças, alertando o usuário visualmente quando alguma
 manutenção está próxima. Neste sentido surge o Meu Possante, um aplicativo que monitora
 o estado atual do veículo e avisa em que momento as manutenções das peças serão
-necessárias. 
+necessárias.
+
+\section{O aplicativo em linhas gerais (título provisório)}
+\label{meupossante-app}
+
+O Meu Possante possui um objetivo simples: Auxiliar o motorista a identificar quais
+peças de seu carro precisarão de manutenção em um futuro próximo. O aplicativo nasceu
+como trabalho final da disciplina de Desenvolvimento de Aplicações para Dispositivos
+Móveis e está em processo refinamento para publicação na Google Play Store.
+
+A tela principal do aplicativo mostra todos os componentes do veículo que são monitorados,
+como pode ser visto na figura \ref{meu-possante-tela-principal}. Ao clicar em um componente,
+a tela do mesmo é mostrada, com informações como a frequência de troca e quilometragem
+atual.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.3\textwidth]{meu-possante-tela-principal}
+\caption{Tela principal do Meu Possante}
+\label{meu-possante-tela-principal}
+\end{figure}
+
+O aplicativo utiliza informações do GPS do dispositivo para calcular a distância percorrida
+pelo motorista enquanto está dirigindo. No momento em que detecta a iminência de manutenção
+de alguma das peças do veículo, uma notificação é enviada para o dispositivo do usuário.
+Esta notificação leva à página da peça correspondente no aplicativo, onde pode ser lido
+mais detalhes sobre o estado atual, como a quilometragem e qual a quilometragem da
+próxima troca, como pode ser visto na figura \ref{meu-possante-tela-componente}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.3\textwidth]{meu-possante-tela-componente}
+\caption{Tela que indica a necessidade de revisão de um componente}
+\label{meu-possante-tela-componente}
+\end{figure}
+
+Na versão atual, o motorista precisa indicar que está dirigindo através de uma tela
+específica. Ao indicar que est
